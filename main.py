@@ -28,7 +28,7 @@ class Dog(Animal):
 class Cat(Animal):
     def make_noise(self):
         super().make_noise()
-        print("Mjau!")
+        #print("Mjau!")
 
 class Parrot(Animal):
     def make_noise(self):
@@ -41,5 +41,5 @@ c = Cat()
 d = Dog()
 h = Rooster()
 p = Parrot()
-sound_off(p)
+sound_off(c)
 
