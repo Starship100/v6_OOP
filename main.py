@@ -34,12 +34,13 @@ class Parrot(Animal):
     def make_noise(self):
         print("Aaaäääou!")
 
-def sound_off(animal):
-    animal.make_noise()
+def sound_off(animals):
+        for animal in animals:
+            animal.make_noise()
 
 c = Cat()
 d = Dog()
 h = Rooster()
 p = Parrot()
-sound_off(c)
+sound_off([c, d, h, p])
 
